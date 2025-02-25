@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Select from "react-select";
-import SimpleBar from "simplebar-react"; // si quieres agregar un scroll personalizado
+import SimpleBar from "simplebar-react";
 import "simplebar/dist/simplebar.min.css";
 import ReactMarkdown from "react-markdown";
 import rata from "../assets/images/rata.png";
@@ -135,14 +135,7 @@ const Copilot: React.FC = () => {
                   }`}
               >
                 <ReactMarkdown>{message.text}</ReactMarkdown>
-
               </div>
-              {/* <div>
-                <span>{new Date().toLocaleTimeString()}</span>{" "}
-                <Link to="#">
-                  <i className="icon ion-android-more-horizontal"></i>
-                </Link>
-              </div> */}
             </div>
           </div>
         ))}
