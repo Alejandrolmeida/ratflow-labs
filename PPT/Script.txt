@@ -1,0 +1,33 @@
+0. Contexto
+	David, un informático cualquiera, entra nuevo para trabajar como técnico de Infraestructura Cloud en una empresa donde su jefe, un experimentado Arquitecto de Azure, es un tirano endiosado que lo explota haciéndole trabajar muchas mas horas de las que debería y que lo presiona constamente diciéndole que es un inútil. 
+	El trabajador en lugar de acudir a un abogado (como haría una persona normal) decide usar sus conocimientos de IA generativa para desarrollar una herramienta que pueda salvar su situación laboral y defenderse de los abusos de su jefe.
+	
+
+Veamos paso a paso como actúa el trabajador... 
+
+Paso 1. Crear una base de conocimiento (podrida). 
+	David se da cuenta de que para vencer a su jefe tendrá que saber más que él de Azure y también necesitará aplicar estrategias de guerra sutiles que le permitan ganar la batalla sin ser despedido. 
+	Por eso crea una base de conocimiento del mas alto nivel de Arquitectura en Azure (Well-Architect Framework) y otra base de conocimiento con el libro de "La Estrategia de la Rata", un libro que relata a la perfección las técnicas que tendrá que usar si quiere llegar a "destrozar a su jefe" sin ser descubierto. 
+
+DEMO 1. Creamos varios índices para búsquedas vectoriales en Azure AI Search 
+	1.1. El primer índice es el libro de estrategia de la rata 
+	1.2. El segundo índice es la guía de well architect de Microsoft
+
+DEMO 2. Creamos una base de datos de CosmosDB con las frases del jefe
+	2.1. Generar esquema JSON con el siguiente esquema: 
+		Cita {
+		  Fecha,
+		  Titulo,
+		  Texto,
+		  Medio, (puede ser "correo electrónico", "Teams", "SMS", "WhatsApp", "Verbal")
+		  Nivel (campo que mide de 0 a 5 estrellas el nivel de pasivo-agresividad y/o abuso laboral)		
+		}
+
+Paso 2. Ya tenemos el conocimiento ahora 
+
+
+2. Creamos varios flujos 
+	1.1. Asistente Laboral de la Rata. Este flujo permite conversar con una IA sobre el comportamiento del jefe, la IA consulta la guía de la rata y ofrece técnicas al trabajador para defenderse. También le ayuda a generar respuestas ingeniosas y elaborar tácticas avanzadas para terminar destrozando al jefe. 
+	1.2. Respondedor pasivo-agresivo. Este flujo lo que
+	1.3. Respondedor automatico. Logic Apps 
+	1.4. Destroza Arquitectos de Azure. Recoge todas las cagadas de una arquitectura de Azure y genera un mensaje destructivo hundiendo en la miseria al arquitecto responsable del proyecto. 
