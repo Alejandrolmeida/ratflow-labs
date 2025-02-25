@@ -1,0 +1,72 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/miniconda
+{
+	"name": "Miniconda (Python 3)",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	}, 
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"installBicep": true,
+			"version": "latest"
+		},
+
+		"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {},
+
+		// Install common utilities
+		"ghcr.io/devcontainers/features/common-utils:2.4.3": {
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "vscode",
+			"uid": "1000",
+			"gid": "1000"
+		}
+	},	
+	
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [80, 443],
+	
+	// Use 'postCreateCommand' to run commands after the container is created.	
+	"postCreateCommand": "chmod +x ./.devcontainer/post-create.sh && sed -i 's/\\r$//' ./.devcontainer/post-create.sh && ./.devcontainer/post-create.sh > ~/post-create.log && sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh && sudo chmod +x /usr/local/bin/oh-my-posh",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				 // Set the terminal font family to ensure proper character display
+				"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+				// Set the terminal font weight for bold text
+				"terminal.integrated.fontWeightBold": "bold",
+				// Set the Unicode version for the terminal
+				"terminal.integrated.unicodeVersion": "11"
+			},
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.vscode-codeql",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.debugpy",				
+				"ms-vscode-remote.remote-wsl",
+				"ms-azuretools.vscode-bicep",				
+				"ms-azuretools.vscode-docker",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"prompt-flow.prompt-flow",
+				"mhutchie.git-graph",
+				"benjaminbenais.copilot-theme",
+				"mechatroner.rainbow-csv"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	//,"remoteUser": "root"
+}
