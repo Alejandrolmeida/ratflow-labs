@@ -6,24 +6,24 @@ To get your code up and running on your own system, follow these steps:
 
 1. **Installation process**:
     ```bash
-    yarn install
+    npm install
     ```
 
 2. **Running the development server**:
     ```bash
-    yarn dev
+    npm run dev
     ```
 
 3. **Building the project**:
     ```bash
-    yarn build
+    npm run build
     ```
 
 4. **Modifying CSS**:
     - The CSS files can be modified in the `src/scss` folder.
     - To compile the SCSS files, run:
       ```bash
-      yarn sass
+      npm run sass
       ```
 5. **Update assistant endpoint**:
     ```

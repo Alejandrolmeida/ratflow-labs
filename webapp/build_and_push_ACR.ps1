@@ -1,8 +1,8 @@
 # Variables
 $acrName = "acrcopilotcspfpinas"
 $acrLoginServer = "$acrName.azurecr.io"
-$imageName = "copilot-frontend"
-$imageTag = "1.2"
+$imageName = "ratflow-app"
+$imageTag = "0.1"
 $fullImageName = "${acrLoginServer}/${imageName}:${imageTag}"
 
 # Iniciar sesión en Azure
