@@ -177,10 +177,7 @@ const Copilot: React.FC = () => {
         // Chat_Service;
         const request: Copilot_Request = {
           chat_history: chatHistory.slice(-10), // Get the last 10 items
-          tenantId: "141865c6-66e2-48e1-a63d-20d5046a0c4a",
-          subscriptionName: "all",
-          category: "advisor",
-          assistant: activeUser,
+          activeUser: activeUser,
           question: messageTextSend,
         };
         // console.log(request);

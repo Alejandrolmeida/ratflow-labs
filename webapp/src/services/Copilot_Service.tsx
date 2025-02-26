@@ -13,10 +13,7 @@ export interface Copilot_Service_Interface {
 
 export interface Copilot_Request {
   chat_history: Copilot_History_Interface[];
-  tenantId: string;
-  subscriptionName: string;
-  category: string;
-  assistant: string;
+  activeUser: string;
   question: string;
 }
 

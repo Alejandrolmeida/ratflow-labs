@@ -3,7 +3,7 @@
 # Variables
 acrName="acrcopilotcspfpinas"
 acrLoginServer="$acrName.azurecr.io"
-imageName="ratflow-app"
+imageName="rat_flow_app"
 imageTag="0.1"
 fullImageName="${acrLoginServer}/${imageName}:${imageTag}"
 
