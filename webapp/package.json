@@ -1,0 +1,52 @@
+{
+  "name": "ratflow-lab-webapp",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "sass": "sass ./src/assets/scss:./src/assets/css/",
+    "sass-min": "sass ./src/assets/scss:./src/assets/css/ --style compressed",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.7",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@simonwep/pickr": "^1.9.1",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-markdown": "^9.0.3",
+    "react-redux": "^8.1.3",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.23.1",
+    "react-select": "^5.8.2",
+    "react-wizard-primitive": "^2.5.0",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.77.4",
+    "simplebar": "^6.2.6",
+    "simplebar-react": "^3.2.5"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.4",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.4.5",
+    "vite": "^5.4.11"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
