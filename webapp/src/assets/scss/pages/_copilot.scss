@@ -1,0 +1,133 @@
+.copilot-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50rem);
+  //height: 90%;
+  padding: 0;
+}
+
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50rem);
+  //height: 90%;
+  padding: 0;
+}
+
+.copilot-header {
+  height: 4rem;
+  display: flex;
+  padding: 0;
+  border-radius: 10px;
+  border: solid 1px #343742;
+}
+
+.copilot-body {
+  flex: 1; /* Ocupa el resto del espacio disponible */
+  display: flex;
+  padding: 0;
+  overflow: auto; /* Permite el desbordamiento */
+}
+
+.copilot-body-content {
+  flex: 1;
+  display: flex;
+  max-height: calc(100vh - 4rem); /* Aplica el max-height */
+  padding: 0;
+}
+
+.content-inner {
+  padding: 5px;
+}
+
+.media-body {
+  // margin-inline-start: 15px;
+  // margin-bottom: 20px; 
+  p {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: $gray-6;
+    line-height: 1.35;
+  }
+}
+
+.copilot-footer {
+  height: 10rem;
+  display: flex;
+  padding: 0;
+}
+
+.copilot-input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+////////////////
+
+.input-container {
+display: flex;
+align-items: center;
+background-color: #343742;
+border-radius: 10px;
+padding: 5px;
+width: 100%;
+// max-width: 500px;
+
+.file-icon {
+    cursor: pointer;
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 20px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.message-textarea {
+  background: none;
+  border: none;
+  outline: none;
+  color: #ccc;
+  resize: none; /* Desactiva el redimensionamiento manual */
+  overflow-y: hidden; /* Oculta el scroll vertical inicialmente */
+  flex: 1;
+  font-size: 14px;
+  line-height: 24px; /* Asegúrate de que coincide con el `lineHeight` en el código */
+  padding: 4px 0;
+
+  &::placeholder {
+      color: #888;
+  }
+}
+
+.send-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 20px;
+
+    &:hover {
+        color: #3c6fef;
+    }
+}
+}
+
+@media (min-width: 375px) {
+  .copilot-container {
+    height: calc(100vh - 5rem);
+  }
+}
+@media (min-width: 768px) {
+  .copilot-container {
+    height: calc(100vh - 3rem);
+  }
+}
+@media (min-width: 992px) {
+  .copilot-container {
+    height: calc(100vh - 5rem);
+  }
+}

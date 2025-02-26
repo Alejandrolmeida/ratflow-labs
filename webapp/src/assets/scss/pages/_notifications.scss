@@ -1,0 +1,24 @@
+/* ###### 7.3 Notifications  ###### */
+
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50rem);
+  //height: 90%;
+  padding: 0;
+}
+@media (min-width: 375px) {
+  .notifications-container {
+    height: calc(100vh - 55rem);
+  }
+}
+@media (min-width: 768px) {
+  .notifications-container {
+    height: calc(100vh - 55rem);
+  }
+}
+@media (min-width: 992px) {
+  .notifications-container {
+    height: calc(100vh - 15rem);
+  }
+}
