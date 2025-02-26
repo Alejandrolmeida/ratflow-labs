@@ -6,8 +6,12 @@ scriptDir=$(dirname "$(realpath "$0")")
 
 # Load environment variables from .env file
 if [ -f "$scriptDir/../../.env" ]; then
-    source "$scriptDir/../.env"
+    source "$scriptDir/../../.env"
 fi
+
+# Convert PROJECT_NAME to uppercase
+PROJECT_NAME_UPPER=$(echo "$PROJECT_NAME" | tr '[:lower:]' '[:upper:]')
+
 
 function login {
     az login --use-device-code -t $TENANT_ID
@@ -43,9 +47,9 @@ function create_env_file {
 
     # Crear el archivo settings.json con la estructura especificada
     cat <<EOF > "$env_file"
-COSMOS_COPILOTCSP_KEY=$COSMOS_KEY
-OAI_COPILOTCSP_API_KEY=$AZURE_AI_SERVICES_KEY
-SEARCH_COPILOTCSP_API_KEY=$AZURE_SEARCH_KEY
+COSMOS_${PROJECT_NAME_UPPER}_KEY=${COSMOS_KEY^^}
+OAI_${PROJECT_NAME_UPPER}_API_KEY=$AZURE_AI_SERVICES_KEY
+SEARCH_${PROJECT_NAME_UPPER}_API_KEY=$AZURE_SEARCH_KEY
 EOF
 }
 
@@ -56,9 +60,9 @@ function  create_settings_file {
 
     cat <<EOF > "$settings_file"
 {
-    "COSMOS_COPILOTCSP_KEY": "$COSMOS_KEY",
-    "OAI_COPILOTCSP_API_KEY": "$AZURE_AI_SERVICES_KEY",
-    "SEARCH_COPILOTCSP_API_KEY": "$AZURE_SEARCH_KEY"    
+    "COSMOS_${PROJECT_NAME_UPPER}_KEY": "$COSMOS_KEY",
+    "OAI_${PROJECT_NAME_UPPER}_API_KEY": "$AZURE_AI_SERVICES_KEY",
+    "SEARCH_${PROJECT_NAME_UPPER}_API_KEY": "$AZURE_SEARCH_KEY"    
 }
 EOF
 }
@@ -80,6 +84,8 @@ function main {
     clean_docker_folder
     create_docker_folder
     copy_requirements_file
+    #create_env_file
+    #create_settings_file
 }
 
 main
