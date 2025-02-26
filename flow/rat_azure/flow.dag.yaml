@@ -9,6 +9,7 @@ inputs:
   question:
     type: string
     is_chat_input: true
+    default: Puedes ayudarme a putear a mi jefe?
 outputs:
   answer:
     type: string
@@ -27,6 +28,7 @@ nodes:
     chat_history: ${inputs.chat_history}
     question: ${inputs.question}
     prompt_text: ${rat_prompt.output}
+    intent: ${rewrite_query.output}
   connection: oai_pfrat01
   api: chat
 - name: question_embedding
@@ -36,8 +38,9 @@ nodes:
     tool: promptflow.tools.embedding.embedding
   inputs:
     connection: oai_pfrat01
-    input: ${inputs.question}
+    input: ${rewrite_query.output}
     deployment_name: text-embedding-3-small
+  aggregation: false
 - name: rat_prompt
   type: prompt
   source:
@@ -53,7 +56,7 @@ nodes:
     path: strategies_search.py
   inputs:
     search: search_pfrat01
-    question: ${inputs.question}
+    question: ${rewrite_query.output}
     index_name: rat-strategies
     embedding: ${question_embedding.output}
 - name: azure_search
@@ -63,7 +66,7 @@ nodes:
     path: azure_search.py
   inputs:
     search: search_pfrat01
-    question: ${inputs.question}
+    question: ${rewrite_query.output}
     embedding: ${question_embedding.output}
     index_name: well-architected
 - name: context
@@ -74,3 +77,13 @@ nodes:
   inputs:
     citations: ${azure_search.output}
     strategies: ${strategies_search.output}
+- name: rewrite_query
+  type: python
+  source:
+    type: code
+    path: rewrite_query.py
+  inputs:
+    query: ${inputs.question}
+    chat_history: ${inputs.chat_history}
+    azure_open_ai_connection: oai_pfrat01
+    open_ai_deployment: gpt-4o-mini
