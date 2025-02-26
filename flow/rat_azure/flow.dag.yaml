@@ -1,0 +1,76 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    max_tokens: 1024
+    temperature: 0.7
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    prompt_text: ${rat_prompt.output}
+  connection: oai_pfrat01
+  api: chat
+- name: question_embedding
+  type: python
+  source:
+    type: package
+    tool: promptflow.tools.embedding.embedding
+  inputs:
+    connection: oai_pfrat01
+    input: ${inputs.question}
+    deployment_name: text-embedding-3-small
+- name: rat_prompt
+  type: prompt
+  source:
+    type: code
+    path: rat_prompt.jinja2
+  inputs:
+    documentation: ${azure_search.output}
+    strategy: ${strategies_search.output}
+- name: strategies_search
+  type: python
+  source:
+    type: code
+    path: strategies_search.py
+  inputs:
+    search: search_pfrat01
+    question: ${inputs.question}
+    index_name: rat-strategies
+    embedding: ${question_embedding.output}
+- name: azure_search
+  type: python
+  source:
+    type: code
+    path: azure_search.py
+  inputs:
+    search: search_pfrat01
+    question: ${inputs.question}
+    embedding: ${question_embedding.output}
+    index_name: well-architected
+- name: context
+  type: python
+  source:
+    type: code
+    path: context.py
+  inputs:
+    citations: ${azure_search.output}
+    strategies: ${strategies_search.output}
