@@ -177,7 +177,7 @@ const Copilot: React.FC = () => {
         // Chat_Service;
         const request: Copilot_Request = {
           chat_history: chatHistory.slice(-10), // Get the last 10 items
-          activeUser: activeUser,
+          user: activeUser,
           question: messageTextSend,
         };
         // console.log(request);

@@ -13,7 +13,7 @@ export interface Copilot_Service_Interface {
 
 export interface Copilot_Request {
   chat_history: Copilot_History_Interface[];
-  activeUser: string;
+  user: string;
   question: string;
 }
 
