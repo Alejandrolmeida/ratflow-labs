@@ -1,122 +1,969 @@
 {
     "citation": [
         {
-            "date": "14-01-2025",
-            "title": "Frase desmotivadora",
-            "text": "Pero ¿estás seguro que esto es así? Vamos a confirmarlo con el senior.",
-            "source": "Teams",
-            "level": 5
+            "Date": "01-01-2025",
+            "Title": "Eres una rata",
+            "Text": "Eres una rata miserable y nunca seras tan listo como yo.",
+            "Source": "WhatsApp",
+            "Level": 5
         },
         {
-            "date": "02-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "Vacaciones? Pero si vives en unas vacaciones continuas.",
-            "source": "Email",
+            "date": "05-02-2024",
+            "title": "Duda constante",
+            "text": "Pero ¿estás seguro que esto es así? Vamos a confirmarlo con el senior.",
+            "source": "Verbal",
             "level": 3
         },
         {
-            "date": "19-02-2025",
-            "title": "Frase desmotivadora",
+            "date": "14-05-2024",
+            "title": "Desacreditación",
+            "text": "Vacaciones? Pero si vives en unas vacaciones continuas.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "29-03-2024",
+            "title": "Menosprecio del esfuerzo",
             "text": "Esto lo hago yo con la punta... y me dices que vas a tardar 4 jornadas? qué vago que eres.",
-            "source": "Teams",
-            "level": 1
-        },
-        {
-            "date": "24-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "Claro, es que eres taaan listo. Anda, deja de pensar que no te pagamos para eso. Haz lo que te he dicho yo, que soy el que sabe.",
             "source": "Email",
-            "level": 2
-        },
-        {
-            "date": "21-01-2025",
-            "title": "Frase desmotivadora",
-            "text": "tú síguete quejando, que desde la cola del paro te vas a poder quejar todo lo que quieras.",
-            "source": "Teams",
-            "level": 1
-        },
-        {
-            "date": "28-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "En serio esto es lo mejor que puedes hacer? La IA te sustituye en 2 días.",
-            "source": "Verbal",
-            "level": 1
-        },
-        {
-            "date": "26-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "Todo son excusas, de verdad. Así vas a llegar lejos, pero en el camino equivocado.",
-            "source": "Email",
-            "level": 1
-        },
-        {
-            "date": "06-01-2025",
-            "title": "Frase desmotivadora",
-            "text": "Le debiste caer muy bien al de RRHH, porque de verdad, no sé qué haces aquí.",
-            "source": "WhatsApp",
             "level": 5
         },
         {
-            "date": "25-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "Ya te vas? Vale, tú mismo... Ya pedirás algo.",
-            "source": "Email",
-            "level": 2
+            "date": "18-12-2024",
+            "title": "Sarcasmo destructivo",
+            "text": "Claro, es que eres taaan listo. Anda, deja de pensar que no te pagamos para eso. Haz lo que te he dicho yo, que soy el que sabe.",
+            "source": "Teams",
+            "level": 4
         },
         {
-            "date": "08-02-2025",
-            "title": "Frase desmotivadora",
+            "date": "18-08-2024",
+            "title": "Amenaza velada",
+            "text": "Tú síguete quejando, que desde la cola del paro te vas a poder quejar todo lo que quieras.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "29-08-2024",
+            "title": "Inutilidad",
+            "text": "En serio esto es lo mejor que puedes hacer? La IA te sustituye en 2 días.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "28-10-2024",
+            "title": "Crítica a futuro",
+            "text": "Todo son excusas, de verdad. Así vas a llegar lejos, pero en el camino equivocado.",
+            "source": "SMS",
+            "level": 3
+        },
+        {
+            "date": "03-04-2024",
+            "title": "Cuestionamiento del mérito",
+            "text": "Le debiste caer muy bien al de RRHH, porque de verdad, no sé qué haces aquí.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "18-01-2024",
+            "title": "Pasivo-agresivo",
+            "text": "Ya te vas? Vale, tú mismo... Ya pedirás algo.",
+            "source": "Teams",
+            "level": 3
+        },
+        {
+            "date": "21-05-2024",
+            "title": "Desprecio directo",
             "text": "A llorar a la llorería.",
             "source": "Verbal",
-            "level": 3
+            "level": 5
         },
         {
-            "date": "26-01-2025",
-            "title": "Frase desmotivadora",
+            "date": "14-10-2024",
+            "title": "Infravaloración del trabajo",
             "text": "A ti, todo lo que no te den masticadito no lo sabes hacer. Para eso, dame tu salario que ya lo hago yo todo.",
-            "source": "WhatsApp",
-            "level": 2
+            "source": "Email",
+            "level": 5
         },
         {
-            "date": "14-01-2025",
-            "title": "Frase desmotivadora",
+            "date": "22-09-2024",
+            "title": "Desvalorización",
             "text": "Qué quieres? una ovación? El trabajo que has hecho es justito, la verdad.",
-            "source": "WhatsApp",
-            "level": 1
+            "source": "Verbal",
+            "level": 3
         },
         {
-            "date": "03-02-2025",
-            "title": "Frase desmotivadora",
+            "date": "28-11-2024",
+            "title": "Falta de reconocimiento",
             "text": "Ocupado? Pero en qué? Si no haces nada? De verdad, no sé en qué inviertes el tiempo por el que te paga la compañía.",
-            "source": "WhatsApp",
-            "level": 3
+            "source": "Teams",
+            "level": 4
         },
         {
-            "date": "24-02-2025",
-            "title": "Frase desmotivadora",
+            "date": "08-01-2024",
+            "title": "Crítica repetitiva",
             "text": "En serio, ¿no te puedes fijar un poquito en lo que haces? Todo lo haces mal. Siempre tengo que estar corrigiendo tus errores.",
-            "source": "Verbal",
-            "level": 3
+            "source": "Teams",
+            "level": 5
         },
         {
-            "date": "28-02-2025",
-            "title": "Frase desmotivadora",
+            "date": "09-07-2024",
+            "title": "Exigencia fuera de horario",
             "text": "Pero qué te cuesta hacer el cambio esta noche? Si no pones de tu parte vas a tener un problema.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "29-01-2024",
+            "title": "Desprecio total",
+            "text": "Vamos a ver, esto quién lo ha hecho? Tú hijo de 5 años? Vamos, por favor, yo creía que aquí contrataban a profesionales, no a mierdecillas que se escaquean de hacer bien las cosas.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "22-03-2024",
+            "title": "Ataque personal",
+            "text": "Pero a ti dónde te han regalado el graduado? Empieza leyéndote un diccionario, que no sabes ni hablar, inútil.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "15-06-2024",
+            "title": "Desprecio implícito",
+            "text": "No te preocupes, algún día quizás llegues a entender esto.",
             "source": "Verbal",
             "level": 3
         },
         {
-            "date": "27-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "vamos a ver, esto quién lo ha hecho? Tú hijo de 5 años? Vamos, por favor, yo creía que aquí contrataban a profesionales, no a mierdecillas que se escaquean de hacer bien las cosas.",
+            "date": "02-07-2024",
+            "title": "Desgaste emocional",
+            "text": "Si cada tarea te lleva tanto tiempo, ¿cómo es que sigues aquí?",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "20-08-2024",
+            "title": "Menosprecio total",
+            "text": "No hace falta que pienses, para eso estamos los que sabemos.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "30-05-2024",
+            "title": "Sarcasmo hiriente",
+            "text": "Si fueras un poco más rápido, quizás tendríamos el trabajo hecho antes del próximo siglo.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "12-09-2024",
+            "title": "Comparación degradante",
+            "text": "Hasta un mono con un teclado lo habría hecho mejor.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "05-10-2024",
+            "title": "Ataque directo",
+            "text": "Eres la única persona que necesita instrucciones para hacer algo tan básico.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "22-11-2024",
+            "title": "Ironía cruel",
+            "text": "Oh sí, seguro que lo hiciste con mucho esfuerzo… demasiado esfuerzo para este resultado.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "18-04-2024",
+            "title": "Falsa motivación",
+            "text": "Dale, tú puedes… aunque a este ritmo, terminaremos para la jubilación.",
+            "source": "Verbal",
+            "level": 3
+        },
+        {
+            "date": "29-03-2024",
+            "title": "Rebajando al mínimo",
+            "text": "Si hicieras lo que te dicen, en lugar de pensar tanto, quizás serías útil.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "01-12-2024",
+            "title": "Deshumanización",
+            "text": "Me pregunto si tendrías más utilidad como mueble en la oficina.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "27-07-2024",
+            "title": "Falsa empatía",
+            "text": "Sé que te esfuerzas… pero a veces el esfuerzo no es suficiente.",
+            "source": "Verbal",
+            "level": 3
+        },
+        {
+            "date": "14-02-2024",
+            "title": "Condescendencia extrema",
+            "text": "Tranquilo, nadie espera que hagas algo bien a la primera.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "07-06-2024",
+            "title": "Duda constante",
+            "text": "¿Seguro que esto es lo mejor que puedes hacer? Porque no lo parece.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "14-08-2024",
+            "title": "Orden humillante",
+            "text": "Vuelve a hacerlo, pero esta vez, usa el cerebro.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "03-11-2024",
+            "title": "Aparente consejo",
+            "text": "Si fueras un poco más listo, quizás no tendríamos que estar teniendo esta conversación.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "10-06-2024",
+            "title": "Sutil amenaza",
+            "text": "Si sigues con ese ritmo, no sé cuánto tiempo más podremos contar contigo.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "22-07-2024",
+            "title": "Ridiculización",
+            "text": "¿En serio sigues con eso? Un niño de 10 años ya lo habría terminado.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "03-08-2024",
+            "title": "Infravaloración",
+            "text": "No esperaba mucho de ti, pero esto es decepcionante.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "15-09-2024",
+            "title": "Falsa motivación",
+            "text": "Ánimo, seguro que algún día aprenderás a hacer tu trabajo bien.",
+            "source": "SMS",
+            "level": 3
+        },
+        {
+            "date": "01-10-2024",
+            "title": "Culpa indirecta",
+            "text": "Gracias a ti vamos retrasados, como siempre.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "20-11-2024",
+            "title": "Comparación insultante",
+            "text": "Los becarios hacen esto el doble de rápido que tú.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "11-05-2024",
+            "title": "Duda hiriente",
+            "text": "¿Seguro que tienes experiencia en esto? No lo parece.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "05-12-2024",
+            "title": "Falsa empatía",
+            "text": "Sé que lo intentas, pero quizá este trabajo no es para ti.",
+            "source": "SMS",
+            "level": 3
+        },
+        {
+            "date": "30-04-2024",
+            "title": "Amenaza de despido",
+            "text": "Sigue así y pronto tendrás mucho tiempo libre.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "27-06-2024",
+            "title": "Humillación directa",
+            "text": "Si fueras un poco más eficiente, no necesitaríamos tantos correos para lo mismo.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "18-07-2024",
+            "title": "Desprecio al esfuerzo",
+            "text": "No sé para qué te esfuerzas, el resultado es el mismo.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "10-09-2024",
+            "title": "Reproche agresivo",
+            "text": "Te lo expliqué cinco veces, pero sigues sin entenderlo. ¿Todo bien en casa?",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "21-03-2024",
+            "title": "Sarcasmo dañino",
+            "text": "Genial, otra vez esperando a que termines algo fácil. Increíble.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "25-10-2024",
+            "title": "Cuestionamiento del talento",
+            "text": "No entiendo cómo te contrataron, sinceramente.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "08-11-2024",
+            "title": "Falsa preocupación",
+            "text": "¿Necesitas ayuda o simplemente nunca vas a hacerlo bien?",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "12-06-2024",
+            "title": "Reunión innecesaria",
+            "text": "Voy a agendar una reunión para explicarte lo que ya deberías saber.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "25-07-2024",
+            "title": "Ataque directo en grupo",
+            "text": "Espero que todos en la reunión estén entendiendo, aunque algunos siempre se quedan atrás.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "09-08-2024",
+            "title": "Duda sobre la capacidad",
+            "text": "¿Estás seguro de que este es tu campo? Porque no lo parece.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "14-09-2024",
+            "title": "Reproche en vivo",
+            "text": "No quiero señalar a nadie, pero hay tareas que llevan días esperando... y todos sabemos por qué.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "03-10-2024",
+            "title": "Comparación con otro equipo",
+            "text": "El otro equipo ya terminó su parte, ¿qué pasa con ustedes?",
+            "source": "Teams",
+            "level": 3
+        },
+        {
+            "date": "22-11-2024",
+            "title": "Falsa preocupación",
+            "text": "¿Necesitas más tiempo o simplemente no sabes cómo hacerlo?",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "05-05-2024",
+            "title": "Sarcasmo en reunión",
+            "text": "No sé cómo lo haces, pero siempre encuentras la forma de complicar lo simple.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "18-12-2024",
+            "title": "Tirando la pelota",
+            "text": "Voy a asumir que el retraso no es culpa tuya, aunque todo indica lo contrario.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "29-04-2024",
+            "title": "Culpa indirecta",
+            "text": "Si hubiéramos seguido mis instrucciones desde el principio, no estaríamos en este problema.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "28-06-2024",
+            "title": "Duda constante",
+            "text": "¿Estás seguro de lo que hiciste? Mejor que alguien más lo revise.",
+            "source": "Teams",
+            "level": 3
+        },
+        {
+            "date": "11-07-2024",
+            "title": "Desgaste emocional",
+            "text": "Me gustaría decir que estoy sorprendido, pero ya me lo esperaba.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "09-09-2024",
+            "title": "Comentarios pasivo-agresivos",
+            "text": "Qué bien que al final salió algo decente. Pensé que nunca llegaría ese día.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "23-03-2024",
+            "title": "Duda sobre la experiencia",
+            "text": "Con la experiencia que dices tener, esto debería haberte tomado la mitad del tiempo.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "27-10-2024",
+            "title": "Desprecio al esfuerzo",
+            "text": "Aprecio tu esfuerzo, pero el resultado deja mucho que desear.",
+            "source": "Teams",
+            "level": 3
+        },
+        {
+            "date": "05-11-2024",
+            "title": "Presión sin sentido",
+            "text": "Si no lo terminas hoy, alguien más lo hará por ti... y mejor.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "05-06-2024",
+            "title": "Reproche formal",
+            "text": "Espero que este error no vuelva a repetirse. No es la primera vez que te pasa.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "15-07-2024",
+            "title": "Culpa indirecta",
+            "text": "Debido a ciertos retrasos en tu parte, el equipo ha tenido que ajustar su planificación.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "22-08-2024",
+            "title": "Desvalorización del trabajo",
+            "text": "No sé si esto es lo mejor que puedes hacer, pero definitivamente no es lo que esperaba.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "10-09-2024",
+            "title": "Comparación negativa",
+            "text": "Otros empleados en tu posición han logrado mejores resultados en menos tiempo.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "02-10-2024",
+            "title": "Duda sobre la eficiencia",
+            "text": "Agradecería que me expliques por qué este trabajo ha tomado más tiempo del previsto.",
             "source": "Email",
             "level": 3
         },
         {
-            "date": "05-02-2025",
-            "title": "Frase desmotivadora",
-            "text": "Pero a ti dónde te han regalado el graduado? Empieza leyéndote un diccionario, que no sabes ni hablar, inútil.",
+            "date": "11-11-2024",
+            "title": "Falsa retroalimentación",
+            "text": "Estoy seguro de que puedes hacerlo mejor. Espero ver mejoras en la próxima entrega.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "01-12-2024",
+            "title": "Expectativa irreal",
+            "text": "Este tipo de trabajo no debería requerir tantas correcciones. No entiendo qué ha pasado.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "17-04-2024",
+            "title": "Exceso de control",
+            "text": "Por favor, envíame actualizaciones cada hora para asegurarme de que esto no se retrase más.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "28-06-2024",
+            "title": "Falsa cortesía",
+            "text": "Gracias por tu esfuerzo, aunque claramente hay mucho margen de mejora.",
+            "source": "Email",
+            "level": 3
+        },
+        {
+            "date": "09-07-2024",
+            "title": "Ataque pasivo-agresivo",
+            "text": "Voy a suponer que este error fue un simple descuido y no falta de conocimientos.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "30-08-2024",
+            "title": "Supervisión extrema",
+            "text": "Voy a revisar personalmente tu trabajo antes de que lo envíes. Ya hemos tenido demasiados errores.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "21-09-2024",
+            "title": "Comparación con otro compañero",
+            "text": "Mira cómo lo ha hecho Pedro, quizás puedas aprender algo de él.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "15-10-2024",
+            "title": "Crítica sin solución",
+            "text": "Este no es el nivel de calidad que esperaba. Espero que lo arregles.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "07-11-2024",
+            "title": "Cuestionamiento de habilidades",
+            "text": "¿Estás seguro de que entiendes cómo funciona esto? Porque no lo parece.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "20-12-2024",
+            "title": "Urgencia innecesaria",
+            "text": "No me importa lo que tengas pendiente, necesito esto terminado hoy.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "03-06-2024",
+            "title": "Desprecio técnico",
+            "text": "¿De verdad me estás preguntando eso? Un básico de Azure como esto lo enseñan en el primer día de cualquier curso decente.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "14-07-2024",
+            "title": "Menosprecio a la capacidad",
+            "text": "Mira, si a estas alturas todavía no entiendes cómo funcionan los Resource Groups en Azure, quizás deberíamos buscarte otro rol.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "25-08-2024",
+            "title": "Ironía sobre conocimientos",
+            "text": "¡Ah, claro! No sabías que en Azure las VMs pueden usar discos administrados. No te preocupes, yo tampoco lo sabía… cuando tenía 10 años.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "05-09-2024",
+            "title": "Comparación con el pasado",
+            "text": "Yo cuando empecé con Azure no tenía documentación tan buena y aún así aprendí. No sé qué excusa tienes tú para no entenderlo.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "12-10-2024",
+            "title": "Comparación con un principiante",
+            "text": "Si le pregunto a un becario, probablemente entienda mejor cómo se hace un despliegue con Terraform en Azure que tú.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "08-11-2024",
+            "title": "Exceso de confianza del jefe",
+            "text": "Mira, yo podría hacer este diseño de arquitectura en 15 minutos sin pensarlo. Pero claro, para ti debe ser como resolver la teoría de cuerdas.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "22-05-2024",
+            "title": "Infravaloración del tiempo",
+            "text": "¿Tardaste cuatro horas en configurar una Azure Function? En serio, ¿qué estuviste haciendo todo ese tiempo?",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "01-12-2024",
+            "title": "Culpa injustificada",
+            "text": "Claro, ahora todo el problema es del cluster de Kubernetes. La culpa siempre es de Azure, nunca de quien configura las cosas mal.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "30-06-2024",
+            "title": "Comparación con otros expertos",
+            "text": "Yo tengo amigos arquitectos en Azure que harían esto en un café. Pero claro, no todos pueden ser expertos como ellos.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "28-07-2024",
+            "title": "Ironía técnica",
+            "text": "Si no entiendes cómo funciona una Azure Policy, me da miedo preguntarte cómo configuras permisos en RBAC.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "18-09-2024",
+            "title": "Ridiculización",
+            "text": "Por favor, dime que al menos sabes qué es un Azure Storage Account. Porque si no, me retiro hoy mismo.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "27-11-2024",
+            "title": "Ataque disfrazado de pregunta",
+            "text": "Dime la verdad, ¿de verdad crees que es buena idea usar una SKU de level bajo para esta solución? O mejor, ¿de verdad entiendes lo que significa SKU?",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "15-04-2024",
+            "title": "Cuestionamiento de habilidades",
+            "text": "Si tuvieras un mínimo de idea sobre cómo funciona Azure DevOps, ya habríamos terminado esto hace semanas.",
+            "source": "Verbal",
+            "level": 4
+        },
+        {
+            "date": "08-10-2024",
+            "title": "Condescendencia total",
+            "text": "Tranquilo, no te preocupes. No todos nacimos con la capacidad de entender cómo funciona un App Service en Azure.",
+            "source": "Verbal",
+            "level": 3
+        },
+        {
+            "date": "10-08-2024",
+            "title": "Presión laboral",
+            "text": "Si no lo configuras bien esta vez, te prometo que la próxima vez lo harás con mucho más tiempo libre… fuera de esta empresa.",
+            "source": "Verbal",
+            "level": 5
+        },
+        {
+            "date": "10-06-2024",
+            "title": "Cuestionamiento de habilidades",
+            "text": "Espero que no hayas roto la infraestructura otra vez. Revisa lo que hiciste en Azure antes de que tengamos un problema serio.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "20-07-2024",
+            "title": "Reproche técnico",
+            "text": "Si el pipeline vuelve a fallar, será culpa de la configuración… adivina quién la hizo mal.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "15-08-2024",
+            "title": "Menosprecio del conocimiento",
+            "text": "¿Todavía no entiendes cómo funcionan los Availability Sets? No sé qué has estado haciendo en este trabajo.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "05-09-2024",
+            "title": "Desconfianza",
+            "text": "Voy a tener que revisar cada uno de tus cambios en el Terraform. No me fío ni un poco.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "01-10-2024",
+            "title": "Crítica sin solución",
+            "text": "El diseño de red que propusiste para Azure es un desastre. Intenta hacerlo de nuevo y que esta vez tenga sentido.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "14-11-2024",
+            "title": "Ironía en gestión de costos",
+            "text": "Gracias por ayudar a duplicar el costo de la suscripción de Azure. Seguro que a Finanzas les encanta tu trabajo.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "02-12-2024",
+            "title": "Culpa por incidentes",
+            "text": "La próxima vez que el balanceador de carga deje de funcionar, mejor que no sea por tu configuración otra vez.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "22-04-2024",
+            "title": "Orden pasivo-agresiva",
+            "text": "Arregla el desastre del almacenamiento en Azure antes de que alguien más tenga que hacerlo por ti.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "30-05-2024",
+            "title": "Comparación con otros",
+            "text": "El equipo de seguridad configuró sus políticas en un día. ¿Por qué lo tuyo lleva ya tres?",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "18-06-2024",
+            "title": "Ironía sobre escalabilidad",
+            "text": "Si tu código fuera tan escalable como dices, ¿por qué el autoscaling sigue fallando?",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "02-07-2024",
+            "title": "Presión innecesaria",
+            "text": "No me importa si hoy es sábado, necesitamos que el AKS esté funcionando bien antes del lunes.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "09-09-2024",
+            "title": "Comparación con inteligencia artificial",
+            "text": "Voy a preguntarle a Copilot si sabe hacer una arquitectura mejor que tú. No creo que le tome mucho tiempo.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "20-10-2024",
+            "title": "Duda constante",
+            "text": "No sé si confiar en tu configuración de Azure Firewall. Mejor pídele a alguien más que la revise.",
+            "source": "SMS",
+            "level": 4
+        },
+        {
+            "date": "05-11-2024",
+            "title": "Desprecio al esfuerzo",
+            "text": "Por favor dime que el despliegue en App Service no se rompió otra vez. Si esto sigue así, mejor te dedicas a otra cosa.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "10-12-2024",
+            "title": "Amenaza laboral",
+            "text": "Si el disaster recovery no funciona cuando lo necesitemos, ya puedes ir buscando otro trabajo.",
+            "source": "SMS",
+            "level": 5
+        },
+        {
+            "date": "07-06-2024",
+            "title": "Duda sobre habilidades",
+            "text": "¿Alguien puede explicarle a David cómo funciona una Azure Virtual Network? Parece que aún no lo tiene claro.",
             "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "22-07-2024",
+            "title": "Presión en despliegues",
+            "text": "Espero que esta vez el pipeline en Azure DevOps no falle. No podemos darnos el lujo de otro 'error accidental'.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "13-08-2024",
+            "title": "Comparación con la IA",
+            "text": "Honestamente, creo que ChatGPT configuraría un AKS mejor que tú en la mitad del tiempo.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "01-09-2024",
+            "title": "Ironía sobre problemas técnicos",
+            "text": "Ah, claro, la culpa es de Azure. No del que configuró mal las reglas del firewall, por supuesto.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "18-10-2024",
+            "title": "Crítica en público",
+            "text": "Por favor, revisa lo que hiciste con las identidades en Entra ID. Me gustaría que esta vez no cause problemas en producción.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "10-11-2024",
+            "title": "Desprecio al esfuerzo",
+            "text": "Si te toma tanto tiempo desplegar una simple Function App, imagina si tuvieras que manejar una arquitectura real.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "05-12-2024",
+            "title": "Culpa injustificada",
+            "text": "Si algo sale mal en la próxima auditoría de seguridad en Azure, todos sabemos quién será el responsable.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "21-04-2024",
+            "title": "Falsa preocupación",
+            "text": "¿Estás seguro de que entiendes cómo funcionan las Azure Policies? Porque el cumplimiento de seguridad dice lo contrario.",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "30-05-2024",
+            "title": "Exceso de control",
+            "text": "Voy a necesitar que cada cambio en el ARM template me lo pases antes de aplicarlo. No quiero más sorpresas.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "18-06-2024",
+            "title": "Comparación negativa",
+            "text": "El equipo de infraestructura ya configuró su parte de la red en Azure. ¿Cuánto más necesitas para terminar la tuya?",
+            "source": "Teams",
+            "level": 4
+        },
+        {
+            "date": "12-07-2024",
+            "title": "Comentario pasivo-agresivo",
+            "text": "Voy a asumir que los costos de la suscripción subieron porque alguien no optimizó bien sus recursos. Solo una suposición.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "27-08-2024",
+            "title": "Ridiculización en grupo",
+            "text": "El próximo que me diga que su despliegue en Terraform falló será oficialmente el nuevo experto en crear problemas en Azure.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "14-09-2024",
+            "title": "Duda sobre experiencia",
+            "text": "Me cuesta creer que alguien con tu experiencia todavía no sepa cómo configurar correctamente un Load Balancer en Azure.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "22-10-2024",
+            "title": "Condescendencia",
+            "text": "No te preocupes, todos tuvimos problemas con los permisos en RBAC… cuando estábamos aprendiendo Azure.",
+            "source": "Teams",
+            "level": 3
+        },
+        {
+            "date": "03-11-2024",
+            "title": "Amenaza sutil",
+            "text": "Si el disaster recovery vuelve a fallar en pruebas, alguien aquí va a tener que replantearse su carrera en Azure.",
+            "source": "Teams",
+            "level": 5
+        },
+        {
+            "date": "12-06-2024",
+            "title": "Corrección innecesaria",
+            "text": "Por favor, revisa la documentación antes de hacer preguntas básicas sobre Azure. No podemos perder tiempo explicando lo evidente.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "18-07-2024",
+            "title": "Crítica sobre rendimiento",
+            "text": "El rendimiento de la solución en Azure es inaceptable. No sé qué pruebas hiciste, pero claramente no fueron suficientes.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "05-08-2024",
+            "title": "Duda sobre experiencia",
+            "text": "Me cuesta creer que alguien con tu experiencia en Azure haya tomado estas decisiones de configuración.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "25-09-2024",
+            "title": "Comparación con otros equipos",
+            "text": "El equipo de seguridad ya ha implementado sus políticas en Azure sin problemas. ¿Por qué seguimos teniendo bloqueos en tu parte?",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "08-10-2024",
+            "title": "Urgencia innecesaria",
+            "text": "Necesito que revises la configuración del AKS inmediatamente. No importa lo que estés haciendo, esto es prioritario.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "14-11-2024",
+            "title": "Supervisión extrema",
+            "text": "Voy a necesitar un reporte diario del estado de la migración en Azure. No quiero más sorpresas desagradables.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "03-12-2024",
+            "title": "Desprecio al esfuerzo",
+            "text": "Gracias por el esfuerzo, pero lo que se esperaba era un trabajo bien hecho, no solo un intento.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "30-04-2024",
+            "title": "Falsa cortesía",
+            "text": "Aprecio tu dedicación en este despliegue de Azure, aunque los errores constantes lo hacen difícil de valorar.",
+            "source": "Email",
+            "level": 3
+        },
+        {
+            "date": "22-06-2024",
+            "title": "Comentario pasivo-agresivo",
+            "text": "Voy a asumir que el aumento de costos en Azure fue un descuido y no falta de control. Espero que se corrija pronto.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "27-07-2024",
+            "title": "Presión innecesaria",
+            "text": "Espero un análisis detallado de lo que pasó con la caída del servicio en Azure en menos de una hora.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "19-08-2024",
+            "title": "Culpa indirecta",
+            "text": "La última auditoría detectó problemas en la configuración de RBAC. Necesito que los soluciones antes de que se haga más evidente de quién fue el error.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "12-09-2024",
+            "title": "Comparación con IA",
+            "text": "Si Copilot hubiera configurado esta infraestructura en Azure, seguramente lo habría hecho sin tantos fallos.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "28-10-2024",
+            "title": "Ironía técnica",
+            "text": "Al parecer, las reglas de seguridad en Azure se configuran solas… o al menos eso pareciera viendo cómo quedaron en producción.",
+            "source": "Email",
+            "level": 5
+        },
+        {
+            "date": "09-11-2024",
+            "title": "Reproche formal",
+            "text": "Espero que este sea el último incidente relacionado con tu configuración en Azure. No podemos permitir más errores de este tipo.",
+            "source": "Email",
+            "level": 4
+        },
+        {
+            "date": "17-12-2024",
+            "title": "Amenaza encubierta",
+            "text": "Si la infraestructura vuelve a fallar por un error tuyo, habrá consecuencias. Estoy seguro de que lo entiendes.",
+            "source": "Email",
             "level": 5
         }
     ]
