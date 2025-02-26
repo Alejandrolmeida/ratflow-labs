@@ -122,16 +122,16 @@ const Copilot: React.FC = () => {
           >
             <div>
               {message.user === "bot" ? (
-                <span className="avatar me-2 avatar-rounded me-4">
+                <span className="avatar me-2 avatar-rounded">
                   <img src={rata} alt="rat" />
                 </span>
-              ) : <span className="avatar me-2 avatar-rounded ms-4">
+              ) : <span className="avatar me-2 avatar-rounded">
                 <img src={message.assistant === "David" ? david : alex} alt="user" />
               </span>}
             </div>
             <div className="media-body">
               <div
-                className={`main-msg-wrapper ${message.user === "user" ? "left bg-light ms-4" : "left"
+                className={`main-msg-wrapper ${message.user === "user" ? "left bg-light ms-1" : "left"
                   }`}
               >
                 <ReactMarkdown>{message.text}</ReactMarkdown>
