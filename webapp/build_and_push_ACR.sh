@@ -1,14 +1,34 @@
 #!/bin/bash
 
+set -e
+
+scriptDir=$(dirname "$(realpath "$0")")
+
+# Load environment variables from .env file
+if [ -f "$scriptDir/../../.env" ]; then
+    source "$scriptDir/../../.env"
+fi
+
+function login {
+    az login --use-device-code -t $TENANT_ID
+    az account set --subscription $SUBSCRIPTION_ID
+}
+
+function check_login {
+    if [ -z "$(az account show)" ]; then
+        login
+    fi
+}
+
 # Variables
-acrName="acrcopilotcspfpinas"
+acrName=$ACR_NAME
 acrLoginServer="$acrName.azurecr.io"
 imageName="rat_flow_app"
 imageTag="0.1"
 fullImageName="${acrLoginServer}/${imageName}:${imageTag}"
 
 # Iniciar sesión en Azure
-az login
+check_login
 
 # Construir la imagen de Docker
 docker build -t "${imageName}:${imageTag}" .

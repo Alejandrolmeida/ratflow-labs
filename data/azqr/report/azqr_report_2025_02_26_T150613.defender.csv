@@ -1,0 +1,16 @@
+Subscription,Subscription Name,Name,Tier,Deprecated
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,VirtualMachines,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,SqlServers,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,AppServices,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,StorageAccounts,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,SqlServerVirtualMachines,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,KubernetesService,Free,true
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,ContainerRegistry,Free,true
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,KeyVaults,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,Dns,Standard,true
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,Arm,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,OpenSourceRelationalDatabases,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,CosmosDbs,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,Containers,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,CloudPosture,Standard,false
+f2e4cd19-7c93-4a22-a9b3-df34a6e7c0af,Boss Labs,Api,Free,false
