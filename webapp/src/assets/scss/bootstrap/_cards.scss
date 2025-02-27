@@ -1,0 +1,299 @@
+.card {
+    margin-block-end: 1.5rem;
+    .card-header,.card-footer {
+        background-color: $custom-white !important;
+        color: $default-text-color;
+    }
+}
+.card {
+    border-radius: $default-radius;
+    border: 0;
+    background-color: $custom-white;
+    color: $default-text-color;
+    box-shadow: $box-shadow;
+    position: relative;
+    margin-block-end: 1.3rem;
+    width: 100%;
+    .card-header {
+        background-color: transparent  !important;
+        border-bottom: 0;
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-header, .card-footer {
+        position: relative;
+        border-color: #ededf5;
+        padding-inline-start: 1.25rem;
+        padding-inline-end: 1.25rem;
+        padding-block-start: 1.25rem;
+    }
+    .card-title {
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .card-title:before {
+        content: "";
+        width: 3px;
+        height: 16px;
+        background: $primary;
+        position: absolute;
+        inset-inline-start: 11px;
+        display: block;
+        top: 21px;
+    }
+    .card-footer {
+        background-color: transparent !important;
+        border-block-start: 1px solid $default-border;
+        padding: 1rem 1.25rem;
+        font-size: $default-font-size;
+    }
+    .card-body {
+        padding: 1.25rem;
+        color: $default-text-color;
+    }
+    .card-link {
+        font-size: 0.75rem;
+    }
+    .card-text {
+        font-size: 0.813rem;
+    }
+    .footer-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+    &.overlay-card {
+        position: relative;
+        overflow: hidden;
+        color: rgba(255,255,255,0.9);
+        .card-header {
+            border-block-end: 1px solid rgba(255,255,255,0.1);
+        }
+        .card-footer {
+            border-block-start: 1px solid rgba(255,255,255,0.1);
+        }
+        .over-content-bottom {
+            top: auto;
+        }
+        &:before {
+            content: "";
+            inset-inline-start: 0;
+            inset-inline-end: 0;
+            inset-block-start: 0;
+            inset-block-end: 0;
+            background-color: rgba(0,0,0,0.2);
+            position: absolute;
+        }
+    }
+    /* Start::Card Background Colors */
+    &.card-bg-primary {
+            background-color: $primary;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-secondary {
+            background-color: $secondary;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-warning {
+            background-color: $warning;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-info {
+            background-color: $info;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-success {
+            background-color: $success;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-danger {
+            background-color: $danger;
+            color: $white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    &.card-bg-light {
+            background-color: $light;
+            color: $default-text-color;
+        .card-header {
+            background-color: rgba(0, 0, 0, 0.05) !important;
+            color: $default-text-color;
+            border-block-end: $default-border;
+        }
+        .card-body {
+            color: $default-text-color;
+        }
+        .card-footer {
+            background-color: rgba(0, 0, 0, 0.05) !important;
+            color: $default-text-color;
+            border-block-start: $default-border;
+        }
+    }
+    &.card-bg-dark {
+            background-color: $dark;
+            color: $custom-white;
+        .card-header {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-end: 1px solid rgba(255,255,255,0.2);
+            &:before {
+                background-color: $custom-white;
+            }
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,0.1) !important;
+            color: $white;
+            border-block-start: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    /* End::Card Background Colors */
+
+    /* Start:: Cards With Links */
+    /* Start:: Cards With Links */
+    .card-anchor {
+        position: absolute;
+        top: 0;
+        inset-inline-end: 0;
+        bottom: 0;
+        inset-inline-start: 0;
+        z-index: 1;
+        pointer-events: auto;
+        content: "";
+    }
+    /* End:: Cards With Links */
+
+    /* Start:: Card With Collapse */
+    .collapse-close {
+        display: none;
+    }
+    &.card .collapsed {
+        .collapse-close {
+            display: block;
+        }
+        .collapse-open {
+            display: none;
+        }
+    }
+    /* End:: Card With Links */
+
+    /* Start::Card With FullScreen */
+    &.card-fullscreen {
+        position: fixed;
+        top: 0;
+        inset-inline-start: 0;
+        inset-inline-start: 0;
+        bottom: 0;
+        z-index: 9999;
+        margin: 0;
+    }
+    /* End::Card With FullScreen */
+}
+.card-img-overlay .card-header {
+    background-color: transparent !important;
+}
+/* Start::Card group */
+.card-group {
+    .card {
+        border-width: 0;
+    }
+}
+/* End::Card group */

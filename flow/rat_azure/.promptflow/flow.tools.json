@@ -72,6 +72,11 @@
             "string"
           ]
         },
+        "user": {
+          "type": [
+            "string"
+          ]
+        },
         "question": {
           "type": [
             "string"
