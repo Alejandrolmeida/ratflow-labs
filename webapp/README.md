@@ -33,6 +33,3 @@ To get your code up and running on your own system, follow these steps:
     ```
     In Bash -> run the file “build_and_push_ACR.sh”
     ```
-    ```
-    In PowerShell -> run the file “build_and_push_ACR.ps1”
-    ```
