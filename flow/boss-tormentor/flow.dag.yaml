@@ -1,0 +1,74 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: Buenas Sam,   Este fin de semana quiero que vengas a trabajar todo el
+      sábado y el domingo. El motivo es que tengo unas entradas para el
+      concierto de rock del grupo que le gusta a mi hija y yo no voy a
+      perdérmelo pudiendo hacer tu el trabajo por mi.   No quiero excusas,
+      quiero todos los informes el lunes en mi mesa y me da igual si te tienes
+      que quedar a dormir en la oficina.   Hasta luego,  Elon Musk.
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    max_tokens: 1024
+    temperature: 0.7
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    prompt_text: ${tormentor_prompt.output}
+    intent: ${rewrite_query.output}
+  connection: oai_pfrat01
+  api: chat
+- name: embeddings
+  type: python
+  source:
+    type: package
+    tool: promptflow.tools.embedding.embedding
+  inputs:
+    connection: oai_pfrat01
+    deployment_name: text-embedding-3-small
+    input: ${rewrite_query.output}
+- name: strategies_search
+  type: python
+  source:
+    type: code
+    path: strategies_search.py
+  inputs:
+    search: search_pfrat01
+    question: ${rewrite_query.output}
+    embedding: ${embeddings.output}
+    index_name: rat-strategies
+- name: tormentor_prompt
+  type: prompt
+  source:
+    type: code
+    path: tormentor_prompt.jinja2
+  inputs:
+    strategy: ${strategies_search.output}
+- name: rewrite_query
+  type: python
+  source:
+    type: code
+    path: rewrite_query.py
+  inputs:
+    azure_open_ai_connection: oai_pfrat01
+    query: ${inputs.question}
+    chat_history: ${inputs.chat_history}
+    open_ai_deployment: gpt-4o-mini

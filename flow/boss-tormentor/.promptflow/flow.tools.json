@@ -1,0 +1,194 @@
+{
+  "package": {
+    "promptflow.tools.embedding.embedding": {
+      "name": "Embedding",
+      "description": "Use Open AI's embedding model to create an embedding vector representing the input text.",
+      "type": "python",
+      "module": "promptflow.tools.embedding",
+      "function": "embedding",
+      "inputs": {
+        "connection": {
+          "type": [
+            "AzureOpenAIConnection",
+            "OpenAIConnection",
+            "ServerlessConnection"
+          ]
+        },
+        "deployment_name": {
+          "type": [
+            "string"
+          ],
+          "enabled_by": "connection",
+          "enabled_by_type": [
+            "AzureOpenAIConnection"
+          ],
+          "capabilities": {
+            "completion": false,
+            "chat_completion": false,
+            "embeddings": true
+          },
+          "model_list": [
+            "text-embedding-ada-002",
+            "text-search-ada-doc-001",
+            "text-search-ada-query-001"
+          ]
+        },
+        "model": {
+          "type": [
+            "string"
+          ],
+          "enabled_by": "connection",
+          "enabled_by_type": [
+            "OpenAIConnection"
+          ],
+          "enum": [
+            "text-embedding-ada-002",
+            "text-search-ada-doc-001",
+            "text-search-ada-query-001"
+          ],
+          "allow_manual_entry": true
+        },
+        "input": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "package": "promptflow-tools",
+      "package_version": "1.6.0"
+    }
+  },
+  "code": {
+    "chat.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "prompt_text": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "intent": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "chat.jinja2"
+    },
+    "tormentor_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "strategy": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "tormentor_prompt.jinja2"
+    },
+    "azure_search.py": {
+      "type": "python",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "index_name": {
+          "type": [
+            "string"
+          ]
+        },
+        "embedding": {
+          "type": [
+            "object"
+          ]
+        },
+        "search": {
+          "type": [
+            "CognitiveSearchConnection"
+          ]
+        }
+      },
+      "source": "azure_search.py",
+      "function": "retrieve_documentation"
+    },
+    "strategies_search.py": {
+      "type": "python",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "index_name": {
+          "type": [
+            "string"
+          ]
+        },
+        "embedding": {
+          "type": [
+            "object"
+          ]
+        },
+        "search": {
+          "type": [
+            "CognitiveSearchConnection"
+          ]
+        }
+      },
+      "source": "strategies_search.py",
+      "function": "retrieve_documentation"
+    },
+    "intent.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "intent.py",
+      "function": "my_python_tool"
+    },
+    "rewrite_query.py": {
+      "type": "python",
+      "inputs": {
+        "query": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "object"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "open_ai_deployment": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "rewrite the query based on the chat history and user input",
+      "source": "rewrite_query.py",
+      "function": "rewrite_query"
+    }
+  }
+}
