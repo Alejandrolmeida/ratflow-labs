@@ -9,10 +9,10 @@ inputs:
   question:
     type: string
     is_chat_input: true
-    default: Puedes ayudarme a putear a mi jefe?
+    default: Puedes ayudarme a desacreditar a mi jefe?
   user:
     type: string
-    default: David
+    default: Sam
 outputs:
   answer:
     type: string
