@@ -94,3 +94,9 @@ nodes:
     chat_history: ${inputs.chat_history}
     azure_open_ai_connection: oai_pfrat01
     open_ai_deployment: gpt-4o-mini
+- name: search_report
+  type: python
+  source:
+    type: code
+    path: search_report.py
+  inputs: {}

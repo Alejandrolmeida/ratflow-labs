@@ -1,0 +1,18 @@
+system:
+{{prompt_text}}
+
+{% for item in chat_history %}
+user:
+{{item.inputs.question}}
+assistant:
+{{item.outputs.answer}}
+{% endfor %}
+
+user:
+{{question}}
+
+intent:
+{{intent}}
+
+Please be brief, use my name Elon in the response, reference 
+in the history, and add emojis for personalization and flair.

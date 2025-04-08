@@ -40,7 +40,7 @@ def init_cosmos_db(config):
     # Crea el contenedor nuevo.
     container = database.create_container(
         id=config["CONTAINER_NAME"],
-        partition_key=PartitionKey(path="/source"),
+        partition_key=PartitionKey(path="/category"),
         offer_throughput=400
     )
     print(f"Contenedor '{config['CONTAINER_NAME']}' creado en la base de datos '{config['DATABASE_NAME']}'.")

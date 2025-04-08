@@ -1,0 +1,55 @@
+{
+  "nodeLayouts": {
+    "inputs": {
+      "x": 300,
+      "y": 42,
+      "index": -1
+    },
+    "outputs": {
+      "x": 415,
+      "y": 846,
+      "index": -1
+    },
+    "chat": {
+      "x": 335,
+      "y": 712,
+      "index": 0
+    },
+    "question_embedding": {
+      "x": 237.5,
+      "y": 310,
+      "index": 1
+    },
+    "rat_prompt": {
+      "x": 500,
+      "y": 578,
+      "index": 2
+    },
+    "strategies_search": {
+      "x": 490,
+      "y": 444,
+      "index": 3
+    },
+    "azure_search": {
+      "x": 140,
+      "y": 444,
+      "index": 4
+    },
+    "context": {
+      "x": 140,
+      "y": 578,
+      "index": 5
+    },
+    "rewrite_query": {
+      "x": 325,
+      "y": 176,
+      "index": 6
+    },
+    "search_report": {
+      "x": 480,
+      "y": 42,
+      "index": 7
+    }
+  },
+  "orientation": "Vertical"
+}
