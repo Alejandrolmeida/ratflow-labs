@@ -1,0 +1,102 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: Puedes ayudarme a desacreditar a mi jefe?
+  user:
+    type: string
+    default: Sam
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+  user:
+    type: string
+    reference: ${inputs.user}
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    max_tokens: 1024
+    temperature: 0.7
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    prompt_text: ${rat_prompt.output}
+    intent: ${rewrite_query.output}
+    user: ${inputs.user}
+  connection: oai_pfrat01
+  api: chat
+- name: question_embedding
+  type: python
+  source:
+    type: package
+    tool: promptflow.tools.embedding.embedding
+  inputs:
+    connection: oai_pfrat01
+    input: ${rewrite_query.output}
+    deployment_name: text-embedding-3-small
+  aggregation: false
+- name: rat_prompt
+  type: prompt
+  source:
+    type: code
+    path: rat_prompt.jinja2
+  inputs:
+    documentation: ${azure_search.output}
+    strategy: ${strategies_search.output}
+- name: strategies_search
+  type: python
+  source:
+    type: code
+    path: strategies_search.py
+  inputs:
+    search: search_pfrat01
+    question: ${rewrite_query.output}
+    index_name: rat-strategies
+    embedding: ${question_embedding.output}
+- name: azure_search
+  type: python
+  source:
+    type: code
+    path: azure_search.py
+  inputs:
+    search: search_pfrat01
+    question: ${rewrite_query.output}
+    embedding: ${question_embedding.output}
+    index_name: well-architected
+- name: context
+  type: python
+  source:
+    type: code
+    path: context.py
+  inputs:
+    citations: ${azure_search.output}
+    strategies: ${strategies_search.output}
+- name: rewrite_query
+  type: python
+  source:
+    type: code
+    path: rewrite_query.py
+  inputs:
+    query: ${inputs.question}
+    chat_history: ${inputs.chat_history}
+    azure_open_ai_connection: oai_pfrat01
+    open_ai_deployment: gpt-4o-mini
+- name: search_report
+  type: python
+  source:
+    type: code
+    path: search_report.py
+  inputs: {}
