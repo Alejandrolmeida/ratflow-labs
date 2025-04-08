@@ -1,0 +1,60 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: "Las maquinas virtuales en Azure ya tienen alta disponibilidad y son
+      seguras por diseño o tengo que implementar otros servicios adicionales o
+      hacer alguna cofiguracion? "
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    max_tokens: 1024
+    temperature: 0.7
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    prompt_text: ${meta_prompt.output}
+  connection: oai_pfrat01
+  api: chat
+- name: embedding
+  type: python
+  source:
+    type: package
+    tool: promptflow.tools.embedding.embedding
+  inputs:
+    connection: oai_pfrat01
+    input: ${inputs.question}
+    deployment_name: text-embedding-3-small
+- name: azure_search
+  type: python
+  source:
+    type: code
+    path: azure_search.py
+  inputs:
+    question: ${inputs.question}
+    index_name: well-architected
+    embedding: ${embedding.output}
+    search: search_pfrat01
+- name: meta_prompt
+  type: prompt
+  source:
+    type: code
+    path: meta_prompt.jinja2
+  inputs:
+    documentation: ${azure_search.output}
